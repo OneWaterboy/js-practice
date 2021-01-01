@@ -10,32 +10,35 @@
     <title>Tip Caclculator</title>
 </head>
 <body>
-    <div class="inputs-div">
+    <div class="calculator-div">
         <h1 class="calc-header">tip calculator</h1>
-        <div class="form-div">
+        <div class="inputs-div">
             <form>
                 <label for="bill-amount">Bill Amount</label>
-                <input name="bill-amount" type="number" id="total">
+                <input name="bill-amount" value="0" type="number" id="billTotal">
                 <label for="serviceQuality">Service Level?</label>
                 <select name="serviceQuality" id="serviceQuality">
-                    <option value="" selected>How Was Your Service?</option>
-                    <option value="terrible">Terrible (0.5% Tip)</option>
-                    <option value="meh">Meh Coulda Stayed Home (3%)</option>
-                    <option value="average">Okay, I dont Hate Them (15%)</option>
-                    <option value="dad">Daddy Likes The Waitress (18%)</option>
-                    <option value="mom">Mom Thinks He's a Hunk (20%)</option>
-                    <option value="incredible">I mean, they licked my toes (30%)</option>
+                    <option value="0" selected>How Was Your Service?</option>
+                    <option value="0.005">Terrible (0.5% Tip)</option>
+                    <option value="0.03">Meh Coulda Stayed Home (3%)</option>
+                    <option value="0.15">Okay, I dont Hate Them (15%)</option>
+                    <option value="0.18">Daddy Likes The Waitress (18%)</option>
+                    <option value="0.20">Mom Thinks He's a Hunk (20%)</option>
+                    <option value="0.30">I mean, they licked my toes (30%)</option>
                 </select>
                 <label for="split">Num. Splitting Check?</label>
-                <input type="number" value="1" id="splitBill" name="split">
-                <input type="button" name="calculate" id="totalBill" value="Total The Bill">
+                <input type="number" min="1" id="splitBill" name="split">
+                <input type="button" name="calculate" id="calculateBill" value="Total The Bill">
             </form>
         </div>
+        <div class="outputs-div" id="outputs">
+            <p class="tip-amount">Tip Amount Per Person:</p>
+            <p id="tipEach">$0.00</p>
+            <p class="tip-amount">Bill Total With Tip (each)</p>
+            <p id="totalEach">$0.00</p>
+        </div>
     </div>
-    <div class="output-div">
-        <p class="tip-amount">Tip Amount Per Person:</p>
-        <sup>$</sup><p id="tipEach">0.00</p>
-
-    </div>
+    <!--Load JS File-->
+    <script src="js/tipCalc.js" rel="script" type="text/javascript"></script>
 </body>
 </html>
