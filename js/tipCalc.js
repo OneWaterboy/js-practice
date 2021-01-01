@@ -8,7 +8,7 @@ function calculate () {
     let split = parseInt(document.getElementById("splitBill").value);
 
         //validate that inputs exist
-        if ( bill === 0){
+        if ( bill === 0 || tip === 0) {
             alert("Please Give Bill Information")
             return;
         }
@@ -17,8 +17,9 @@ function calculate () {
         totalTip.toFixed(2);
         document.getElementById("tipEach").innerHTML = `$${totalTip}`
         //calculate total bill per person
-        var totalCost = (bill / split) + totalTip;
-        totalCost.toFixed(2);
+        var billEach = bill / split;
+        billEach = billEach.toFixed(2);
+        var totalCost = billEach;
         document.getElementById("totalEach").innerHTML = `$${totalCost}`
 }
 

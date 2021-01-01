@@ -43,6 +43,7 @@ p, label, h1 {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 60% 40%;
+    justify-items: center;
 }
 
 .currencyinput {

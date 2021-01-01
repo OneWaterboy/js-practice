@@ -27,15 +27,17 @@
                     <option value="0.30">I mean, they licked my toes (30%)</option>
                 </select>
                 <label for="split">Num. Splitting Check?</label>
-                <input type="number" min="1" id="splitBill" name="split">
+                <input type="number" value="1" min="1" id="splitBill" name="split">
                 <input type="button" name="calculate" id="calculateBill" value="Total The Bill">
             </form>
         </div>
         <div class="outputs-div" id="outputs">
             <p class="tip-amount">Tip Amount Per Person:</p>
             <p id="tipEach">$0.00</p>
-            <p class="tip-amount">Bill Total With Tip (each)</p>
+            <p class="tip-amount">Individual Portion Of The Bill</p>
             <p id="totalEach">$0.00</p>
+            <p class="total-amount">Total Cost For You</p>
+            <p id="finalCost">$0.00</p>
         </div>
     </div>
     <!--Load JS File-->
