@@ -1,0 +1,23 @@
+/*==============================================
+            Main Div Styling
+==============================================*/
+
+body {
+    background-color: #2b4d15;
+}
+
+.calculator-div {
+    width: 60vh;
+    max-width: 80vw;
+    height: 70vh;
+    background-color: whitesmoke;
+    margin: 20vh auto;
+}
+
+.calc-header {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: whitesmoke;
+}
