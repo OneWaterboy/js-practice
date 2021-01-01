@@ -4,20 +4,61 @@
 
 body {
     background-color: #2b4d15;
+    font-family: 'Goldman', cursive;
 }
 
-.calculator-div {
+p, label, h1 {
+    font-family: 'Goldman', cursive;
+}
+
+.inputs-div {
     width: 60vh;
     max-width: 80vw;
     height: 70vh;
     background-color: whitesmoke;
     margin: 20vh auto;
+    border-radius: 20px;
+    box-shadow: 10px 5px darkblue;
 }
 
 .calc-header {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
+    margin-top: 2vh;
+}
+
+.form-div {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.currencyinput {
+    border: 1px inset #ccc;
+}
+.currencyinput input {
+    border: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    grid-row-gap: 30%;
+}
+
+input {
+    padding-left: 5%;
+}
+
+#totalBill {
+    max-width: 60%;
+    text-transform: uppercase;
+    border-radius: 10px;
     background-color: black;
     color: whitesmoke;
 }

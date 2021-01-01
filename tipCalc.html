@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/tipCalc.css" rel="stylesheet" type="text/css">
+    <!--Google Fonts Add In For Styling-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
     <title>Tip Caclculator</title>
 </head>
 <body>
-    <div class="calculator-div">
+    <div class="inputs-div">
         <h1 class="calc-header">tip calculator</h1>
-        <form>
+        <div class="form-div">
+            <form>
+                <label for="bill-amount">Bill Amount</label>
+                <input name="bill-amount" type="number" id="total">
+                <label for="serviceQuality">Service Level?</label>
+                <select name="serviceQuality" id="serviceQuality">
+                    <option value="" selected>How Was Your Service?</option>
+                    <option value="terrible">Terrible (0.5% Tip)</option>
+                    <option value="meh">Meh Coulda Stayed Home (3%)</option>
+                    <option value="average">Okay, I dont Hate Them (15%)</option>
+                    <option value="dad">Daddy Likes The Waitress (18%)</option>
+                    <option value="mom">Mom Thinks He's a Hunk (20%)</option>
+                    <option value="incredible">I mean, they licked my toes (30%)</option>
+                </select>
+                <label for="split">Num. Splitting Check?</label>
+                <input type="number" value="1" id="splitBill" name="split">
+                <input type="button" name="calculate" id="totalBill" value="Total The Bill">
+            </form>
+        </div>
+    </div>
+    <div class="output-div">
+        <p class="tip-amount">Tip Amount Per Person:</p>
+        <sup>$</sup><p id="tipEach">0.00</p>
 
-        </form>
-
-    </div> 
+    </div>
 </body>
 </html>
