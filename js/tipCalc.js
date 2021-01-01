@@ -3,7 +3,7 @@
 // Pull amounts for calculations
 
 function calculate () {
-    let bill = parseInt(document.getElementById("billTotal").value);
+    let bill = parseFloat(document.getElementById("billTotal").value);
     let tip = parseFloat(document.getElementById("serviceQuality").value);
     let split = parseInt(document.getElementById("splitBill").value);
 
@@ -13,14 +13,14 @@ function calculate () {
             return;
         }
         //calculate the tip per person
-        var totalTip = (bill / split) * tip;
-        totalTip.toFixed(2);
+        var totalTip = ((bill / split) * tip).toFixed(2);
         document.getElementById("tipEach").innerHTML = `$${totalTip}`
         //calculate total bill per person
-        var billEach = bill / split;
-        billEach = billEach.toFixed(2);
-        var totalCost = billEach;
-        document.getElementById("totalEach").innerHTML = `$${totalCost}`
+        var billEach = (bill / split).toFixed(2);
+        document.getElementById("totalEach").innerHTML = `$${billEach}`
+        //individuals total cost
+        var yourTotal = parseFloat(billEach) + parseFloat(totalTip);
+        document.getElementById("finalCost").innerHTML = `$${yourTotal}`
 }
 
 document.getElementById("calculateBill").onclick = function () {
