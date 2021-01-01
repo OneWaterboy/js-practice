@@ -14,9 +14,11 @@ function calculate () {
         }
         //calculate the tip per person
         var totalTip = (bill / split) * tip;
+        totalTip.toFixed(2);
         document.getElementById("tipEach").innerHTML = `$${totalTip}`
         //calculate total bill per person
-        var totalCost = bill + totalTip;
+        var totalCost = (bill / split) + totalTip;
+        totalCost.toFixed(2);
         document.getElementById("totalEach").innerHTML = `$${totalCost}`
 }
 
