@@ -11,6 +11,10 @@ p, label, h1 {
     font-family: 'Goldman', cursive;
 }
 
+p {
+    font-size: 1.2em;
+}
+
 .calculator-div {
     width: 60vh;
     max-width: 80vw;
@@ -18,7 +22,7 @@ p, label, h1 {
     background-color: whitesmoke;
     margin: 20vh auto;
     border-radius: 20px;
-    box-shadow: 10px 5px darkblue;
+    box-shadow: 10px 5px gray;
 }
 
 .calc-header {
@@ -44,6 +48,7 @@ p, label, h1 {
     display: grid;
     grid-template-columns: 60% 40%;
     justify-items: center;
+    margin-top: 30%;
 }
 
 .currencyinput {
@@ -61,6 +66,8 @@ form {
 
 input {
     padding-left: 5%;
+    border-radius: 5px;
+    height: 1.5em;
 }
 
 input:focus {
