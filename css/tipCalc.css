@@ -7,18 +7,19 @@ body {
     font-family: 'Goldman', cursive;
 }
 
-p, label, h1 {
+p, label, h1, select, input {
     font-family: 'Goldman', cursive;
 }
 
+
 p {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .calculator-div {
-    width: 60vh;
+    width: 80vh;
     max-width: 80vw;
-    height: 70vh;
+    height: auto;
     background-color: whitesmoke;
     margin: 20vh auto;
     border-radius: 20px;
@@ -51,12 +52,6 @@ p {
     margin-top: 30%;
 }
 
-.currencyinput {
-    border: 1px inset #ccc;
-}
-.currencyinput input {
-    border: 0;
-}
 
 form {
     display: grid;
@@ -84,9 +79,24 @@ input:focus {
     margin: 0 auto;
     grid-column: span 2;
     text-align: center;
+    height: 2em;
+
 }
 
+select {
+    padding-left: 5%;
+    border-radius: 5px;
+    height: 1.5em;
+}
 
-/*======================================
-    Outputs
-=======================================*/
+@media only screen and (max-width: 340px){
+    p {
+        font-size: 0.75em;
+    }
+    .calculator-div {
+        height: 60vh;
+    }
+    form {
+        margin-bottom: 120px;
+    }
+}
