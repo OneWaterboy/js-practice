@@ -113,7 +113,7 @@ button {
   color: #FFFFFF;
 }
 
-.btn__reset {
+.btn-reset {
   padding: 8px;
   width: 20%;
   margin: 50px auto;
@@ -123,6 +123,7 @@ button {
   border-radius: 5px;
   color: whitesmoke;
   font-size: var(--font-size-medium);
+  text-decoration: none;
 }
 
 /* Overlay */
@@ -177,7 +178,7 @@ button {
 
 
 @media (max-width: 768px){
-  .btn__reset{
+  .btn-reset{
     min-width: 30%;
   }
   .title{

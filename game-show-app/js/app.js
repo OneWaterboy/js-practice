@@ -1,19 +1,11 @@
 
 //Hide Overlay When Start Button is clicked
 
-function startGame () = {
-    var begin = document.getElementById('startOverlay');
-    if (begin.style.display == "flex"){
-        begin.style.display = 'none'
-    }
-    else {
-        begin.style.display = 'flex'
-    }
-}
+let begin = document.getElementById('startButton')
 
 //phrases array
 
-const phrases = [mountaineering, 
+const phrases = ["mountaineering", 
                 "squirrel", 
                 "glacier", 
                 "summit", 
@@ -28,7 +20,11 @@ const phrases = [mountaineering,
                 "mountain goat",
                 "himalaya",
                 "bivy sack",
-                "sleeping bag" ];
+                "sleeping bag",
+                "tent site",
+                "abseil",
+                "snow couloir",
+                "fisherman's bend" ];
 
 //Get Phrase Function
 
