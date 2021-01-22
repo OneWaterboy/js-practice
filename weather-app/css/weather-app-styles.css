@@ -1,0 +1,28 @@
+
+:root {
+    --skyblue: #42cbf5;
+    --darkday: #35839c ;
+    --rockgray: #808487; 
+}
+
+body {
+    background: radial-gradient(var(--skyblue), var(--darkday));
+    font-family: 'Dosis', sans-serif;
+}
+
+.app-title {
+    margin: 0 auto;
+    text-align: center;
+    margin: 10vw 0;
+}
+
+.weather-data {
+    margin-left: 20vw;
+}
+
+.box {
+    border: solid 3px var(--rockgray);
+    margin-right: 40vw;
+    padding: 10px;
+    background-color: whitesmoke;
+}
