@@ -52,6 +52,7 @@ button {
     border-radius: 1rem 1rem 1rem 1rem;
     width: 80%;
     margin: 0 auto;
+    font-size: x-large;
 }
 button:first-child {
     background: var(--green);
