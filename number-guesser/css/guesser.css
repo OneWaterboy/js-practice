@@ -2,6 +2,7 @@
 :root {
     --green: darkgreen;
     --red: darkred;
+    --purple: #6a0dad;
 }
 
 
@@ -20,11 +21,12 @@ main {
     text-align: center;
     background: #f8f1e9;
     border: solid var(--green);
-    border-width: 0 8px 8px 8px;
+    border-width: 8px;
     min-height: 80vh;
-    border-radius: 0 0 3rem 3rem;
+    border-radius: 3rem;
     padding: 1rem;
     color: #1f2933;
+    margin-top: 10rem;
 }
 
 h1 {
@@ -48,6 +50,8 @@ button {
     background: skyblue;
     padding: 2rem;
     border-radius: 1rem 1rem 1rem 1rem;
+    width: 80%;
+    margin: 0 auto;
 }
 button:first-child {
     background: var(--green);
@@ -66,11 +70,12 @@ h3 {
 }
 
 input {
-    border: 1px solid lightgrey;
+    border: 2px solid var('--purple');
     background: transparent;
     margin: 2rem 0;
     padding: 1rem 0;
     width: 16rem;
+    border-radius: 2rem;
 }
 
 #range {
@@ -79,6 +84,7 @@ input {
     height: 50px;
     padding: 0;
     margin: 0 0 4rem 0;
+    border-radius: 2rem;
 }
 
 #rangeOutput {
@@ -87,6 +93,9 @@ input {
 
 .stats {
     text-align: left;
+    width: 40%;
+    font-weight: 800;
+    margin: 0 auto;
 }
 
 .info {
