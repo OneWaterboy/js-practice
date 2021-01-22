@@ -25,4 +25,11 @@ body {
     margin-right: 40vw;
     padding: 10px;
     background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+.return-span {
+    color: red;
+    text-align: right;
 }
