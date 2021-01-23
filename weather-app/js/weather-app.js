@@ -18,5 +18,23 @@ $.ajax ({
         let s = Math.round(result.wind.speed)
         let speed = s.toString();
         $('#wind').text(speed);
+        //Convert Sunrise and sunset time from unix time stamp code
+                //The Following Conversion method Was Taken Form Stack Overflow
+        let unix_timestamp = result.sys.sunrise;
+        var date = new Date(unix_timestamp * 1000);
+        var hours = date.getHours();
+        var minutes = "0" + date.getMinutes();
+        var formattedTime = hours + ':' + minutes.substr(-2);
+        var sunUp = formattedTime.toString();
+        $('#sunUp').text(sunUp);
+
+        let unix_timestamp2 = result.sys.sunset;
+        var date = new Date(unix_timestamp2 * 1000);
+        var hours = date.getHours();
+        var minutes = "0" + date.getMinutes();
+        var formattedTime = hours + ':' + minutes.substr(-2);
+        var sunDown = formattedTime.toString();
+        $('#sunDown').text(sunDown);
+
     }
 })
