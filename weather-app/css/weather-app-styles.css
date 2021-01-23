@@ -16,17 +16,28 @@ body {
     margin: 10vw 0;
 }
 
-.weather-data {
-    margin-left: 20vw;
+.weather-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80%;
+    grid-gap: 2vw;
+    margin: 0 auto;
 }
-
-.box {
+.weather-data-box {
     border: solid 3px var(--rockgray);
-    margin-right: 40vw;
     padding: 10px;
     background-color: whitesmoke;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    
 }
 
 .return-span {
