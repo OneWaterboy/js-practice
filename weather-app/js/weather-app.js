@@ -7,12 +7,12 @@ $.ajax ({
     success: function (result) {
         console.log(result);
 
-        $('#location').text(result[0].name);
+        $('#location').text(result.list[0].name);
         // Return temperature as a string
         let c = Math.round(result.main.temp);
         let degrees = c.toString()
         $('#temperature').text(degrees)
-        $('#sky').text(result.weather[0].description);
+        $('#sky').text(result.list[0].weather[0].description);
         
         // Return wind speed and direction as a string
         let s = Math.round(result.wind.speed)
