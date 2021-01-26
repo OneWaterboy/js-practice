@@ -11,7 +11,6 @@ let quoteChoice = [
 ]
 
 function pickRandomQuote () {
-    let arrayPosition = Math.floor((Math.random() * quoteChoice.length) + 1);
+    let arrayPosition = Math.floor(Math.random() * quoteChoice.length);
     document.getElementById('quote-output').innerHTML = quoteChoice[arrayPosition];
-    console.log(quoteChoice[arrayPosition]);
 }
