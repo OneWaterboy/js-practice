@@ -1,0 +1,16 @@
+
+
+body {
+    background-color: blue;
+}
+
+#color-picker {
+    border: solid 3px black;
+    background-color: whitesmoke;
+    width: 60%;
+    text-align: center;
+    margin: 25% auto;
+    padding: 2%;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 10px;
+}
