@@ -7,7 +7,6 @@ function pickColor() {
     for (let i=0; i < 6; i++){
         hexValue += colorValues[Math.floor(Math.random()* colorValues.length)]
     }
-    console.log(hexValue);
     document.body.style.backgroundColor = hexValue;
     document.getElementById('current-color').innerHTML = hexValue;
 }
