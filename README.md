@@ -1,0 +1,1 @@
+This is a collection of practice projects that I do on my own time to make sure I keep growing my javascript skills. Many of these are just simple projects used to practice DOM manipulation and creating functions.
