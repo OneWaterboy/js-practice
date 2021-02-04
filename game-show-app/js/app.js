@@ -28,5 +28,7 @@ const phrases = ["mountaineering",
                 "snow couloir",
                 "fisherman's bend" ];
 
-//Split game phrase into a usable array for game
+//variables
 
+let wordChoice = Math.floor(Math.random() * (phrases.length + 1))
+let gamePhrase = phrases[wordChoice];
