@@ -26,7 +26,7 @@ const phrases = ["mountaineering",
                 "tent site",
                 "abseil",
                 "snow couloir",
-                "fisherman's bend" ];
+                "fishermans bend" ];
 
 //variables
 
@@ -35,3 +35,21 @@ let gamePhrase = phrases[wordChoice];
 let gameArray = Array.from(gamePhrase);
 
 console.log(gameArray);
+
+// Add <li> elements to <ul> for each letter in the phrase
+
+function wordOutlay (arr) {
+    arr.forEach(element => {
+        let li = document.createElement("li");
+        li.textContent = element;
+
+        if (element === " "){
+            li.className = "space";
+        } else {
+            li.className = "letter";
+        }
+        ul.appendChild(li);
+    });
+}
+
+wordOutlay(gameArray);
