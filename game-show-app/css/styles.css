@@ -176,6 +176,11 @@ button {
   color: var(--color-lose);
 }
 
+.heart-section {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
 
 @media (max-width: 768px){
   .btn-reset{

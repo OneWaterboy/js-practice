@@ -1,9 +1,17 @@
 
 //Hide Overlay When Start Button is clicked
 
-let begin = document.getElementById('startButton')
+function startGame () {
+    document.getElementById('startOverlay').style.display = 'none';
+}
 
-//phrases array
+//variables
+
+let wordChoice = Math.floor(Math.random() * (phrases.length + 1))
+let gamePhrase = phrases[wordChoice];
+console.log(gamePhrase);
+
+//phrases array - need to pick a random phrase from this array
 
 const phrases = ["mountaineering", 
                 "squirrel", 
@@ -27,6 +35,8 @@ const phrases = ["mountaineering",
                 "fisherman's bend" ];
 
 //Get Phrase Function
+
+
 
 function getRandomPhraseAsArray(arr){
                                            //get random phrase from array [math.random is best option]
