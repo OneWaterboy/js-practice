@@ -32,3 +32,6 @@ const phrases = ["mountaineering",
 
 let wordChoice = Math.floor(Math.random() * (phrases.length + 1))
 let gamePhrase = phrases[wordChoice];
+let gameArray = Array.from(gamePhrase);
+
+console.log(gameArray);
