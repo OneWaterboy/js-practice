@@ -74,7 +74,9 @@ button {
 /* Title */
 
 .header {
-  color: var(--color-start);
+  color: var(--color-hike2hike-green);
+  text-align: center;
+  font-size: var(--font-size-medium);
 }
 
 /* Phrase */
